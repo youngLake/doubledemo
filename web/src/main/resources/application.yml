@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 30
+
+dubbo:
+  application:
+    name: web-consumer
+  registry:
+    address: zookeeper://localhost:2181
+  reference:
+    id: userServiceRef
+    interface: com.young.api.UserService
+    check: false
