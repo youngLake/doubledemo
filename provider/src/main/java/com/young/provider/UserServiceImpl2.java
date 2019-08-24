@@ -11,10 +11,10 @@ import java.util.List;
  * @version 2019/8/19 11:28
  */
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl2 implements UserService {
     @Override
     public List<String> getAddrs(String userId) {
-        System.out.println("provider.....");
+        System.out.println("provider2....");
         List<String> addrs=new ArrayList<>();
         addrs.add("北京市东城区东直门");
         addrs.add("北京市西城区西直门");

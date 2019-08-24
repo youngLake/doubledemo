@@ -13,3 +13,8 @@ dubbo:
     id: userServiceRef
     interface: com.young.api.UserService
     check: false
+  method:
+    name: method1
+    timeout: 2000
+    retries: 3
+    loadbalance: roundrobin
